@@ -1,0 +1,1885 @@
+/* ==UserStyle==
+@name         MLBpark Dotum
+@version      20241022.07.13
+@namespace    https://userstyles.world/user/thething99
+@description  mlbpark.donga.com Custom Tweak by 1q842024-10-21 ver. a01
+@author       thething99
+@license      CC BY NC
+==/UserStyle== */
+
+@charset "utf-8";
+@font-face {
+    font-family: "Noto Sans KR";
+    font-weight: 200;
+    src: url("https://image.donga.com/font/NotoSansKR-Regular.eot");
+    src: url("https://image.donga.com/font/NotoSansKR-Regular.eot?#iefix") format("embedded-opentype"), url("https://image.donga.com/font/NotoSansKR-Regular.woff2") format("woff2"), url("https://image.donga.com/font/NotoSansKR-Regular.woff") format("woff"), url("https://image.donga.com/font/NotoSansKR-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Noto Sans KR";
+    font-weight: 400;
+    src: url("https://image.donga.com/font/NotoSansKR-Medium.eot");
+    src: url("https://image.donga.com/font/NotoSansKR-Medium.eot?#iefix") format("embedded-opentype"), url("https://image.donga.com/font/NotoSansKR-Medium.woff2") format("woff2"), url("https://image.donga.com/font/NotoSansKR-Medium.woff") format("woff"), url("https://image.donga.com/font/NotoSansKR-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Noto Sans KR";
+    font-weight: 700;
+    src: url("https://image.donga.com/font/NotoSansKR-Bold.eot");
+    src: url("https://image.donga.com/font/NotoSansKR-Bold.eot?#iefix") format("embedded-opentype"), url("https://image.donga.com/font/NotoSansKR-Bold.woff2") format("woff2"), url("https://image.donga.com/font/NotoSansKR-Bold.woff") format("woff"), url("https://image.donga.com/font/NotoSansKR-Bold.otf") format("opentype");
+}
+
+/* Common Style */
+* {
+    margin: 0;
+    padding: 0;
+    word-spacing: 0px;
+    letter-spacing: -0.5px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    
+    font-family: "돋움", Dotum, sans-serif, Arial;
+    font-size: 13px;
+    font-weight: 200;
+    position: relative;
+}
+
+.tbl_type01 tbody tr td .tit a{
+    font-family: "돋움", Dotum, sans-serif, Arial;
+    font-size: 13px;
+    position: relative;
+    
+    
+}
+
+
+table,
+div {
+    border-collapse: collapse;
+}
+
+select,
+textarea,
+input {
+    font-family: "돋움", Helvetica, sans-serif;
+    font-size: 13px;
+    color: #000;
+    vertical-align: top;
+}
+
+.reply_list {
+      font-family: "돋움", Dotum, sans-serif, Arial;    
+}
+
+.tbl_type01 .replycnt {
+    font-family: "돋움", Helvetica, sans-serif;
+    font-size: 12px;
+    word-spacing: -10px;
+    letter-spacing: -1px;
+
+
+}
+
+
+.lists {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 10px;
+}
+
+.lists .items {
+    position: relative;
+    min-height: 31px;
+    border-bottom: 1px solid #ccc;
+    width: 100% auto;
+    padding: 5px 0;
+}
+
+.lists .block {
+    width: 100% auto;
+    padding: 4px 4px 4px 53px;
+    line-height: 28px;
+}
+
+.lists .block a {
+    color: gray;
+    margin: 0 5px;
+}
+
+.lists .block span {
+    color: #25a;
+}
+
+.lists .btn_list {
+    position: absolute;
+    bottom: 12px;
+    right: 15px;
+}
+
+.lists .btn_list .btn_write {
+    margin-right: 8px;
+}
+
+.lists .items .reply {
+    display: block;
+    width: 11px !important;
+    height: 12px !important;
+    margin: 10px 12px 0 24px !important;
+    background: url('https://image.donga.com/challenge/mlbpark/images/icon_reply.gif') no-repeat 0 0;
+    text-indent: -999999px;
+}
+
+.lists .head {
+    border-bottom: 1px solid #bbb;
+    background: #eaeff9;
+    font-weight: bold;
+}
+
+.lists .head .photo {
+    float: left;
+}
+
+.lists .dugout {
+    border-bottom: 1px solid #bbb;
+    background: #eaeff9;
+    font-weight: bold;
+}
+
+.lists .items .photo {
+    float: left;
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    margin: 3px 10px 0 10px;
+    vertical-align: top;
+}
+
+.lists .items .photo .icon_rank {
+    position: absolute;
+    top: 8px;
+    left: 18px;
+    width: 19px;
+    height: 19px;
+    background: url('https://image.donga.com/challenge/mlbpark/images/bg_ranking320.png') no-repeat 0 0;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 24px;
+    font-size: 13px;
+    letter-spacing: -1px;
+}
+
+.lists .items .photo .icon_new {
+    position: absolute;
+    top: 19px;
+    left: 25px;
+    width: 18px;
+    height: 18px;
+    background: url('https://image.donga.com/challenge/mlbpark/images/icon_new01.png') no-repeat 0 0;
+}
+
+.lists .items .photo .icon_hot {
+    position: absolute;
+    top: 19px;
+    left: 25px;
+    width: 18px;
+    height: 18px;
+    background: url('https://image.donga.com/challenge/mlbpark/images/icon_hot01.png') no-repeat 0 0;
+}
+
+.lists .items .photo a img {
+    width: 27px;
+    height: 27px;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid #bfbfbf;
+    border-radius: 100%
+}
+
+.lists .items .text {
+    display: inline-block;
+    width: 650px;
+    vertical-align: middle;
+    padding-top: 3px;
+}
+
+.lists .items .text .info {
+    float: right;
+    font-size: 14px;
+}
+
+.lists .items .text .title {
+    text-align: center;
+    line-height: 22px;
+}
+
+.lists .items .text .nick {
+    display: inline-block;
+    width: 125px;
+    color: #5181e3;
+}
+
+.lists .items .text .val {
+    display: inline-block;
+    color: #34518d;
+    width: 50px;
+    text-align: right;
+    padding-right: 5px;
+    font-size: 13px;
+}
+
+.lists .items .text .date {
+    display: inline-block;
+    color: #666;
+    width: 90px;
+}
+
+.lists .items .text .board {
+    display: inline-block;
+    color: #666;
+    margin: 0 7px;
+    width: 85px;
+}
+
+.lists .items .text .board a {
+    color: #666 !important;
+}
+
+.lists .items .text .allim {
+    display: block;
+    color: #666 !important;
+    font-size: 13px;
+}
+
+.lists .items .text .allim em {
+    font-style: normal;
+    color: #25a;
+}
+
+.lists .items .text .del {
+    position: absolute;
+    top: 17px;
+    right: 5px;
+    margin-right: 5px;
+}
+
+.lists .items .text .del img {
+    width: 12px;
+    height: auto;
+    border: none;
+}
+
+.lists .items .text .title a {
+    display: inline-block;
+    width: 350px;
+    color: #333;
+    text-align: left;
+    font-size: 12px;
+    font-family: "돋움", "Gulim";
+}
+
+.lists .items .text .title span {
+    color: #25a;
+    padding-right: 3px;
+}
+
+.lists .items .text .title a .replycnt {
+    color: #ec4908;
+    padding-left: 2px;
+    font-weight: bold;
+    letter-spacing: -15px;
+}
+
+.lists .items .text .dugout_title {
+    display: inline-block;
+}
+
+.lists .items .text .dugout_title a {
+    color: #333;
+    width: 325px !important;
+}
+
+.lists .items .text .aggreeK {
+    display: none;
+}
+
+.lists .items .text .aggreeY {
+    display: none;
+}
+
+.lists .items .text .viewK {
+    display: none;
+}
+
+
+
+
+/* 메인페이지 하단 투데이베스트 영역 탑 변경 */
+/*240417 수정*/
+.today_layer.type2 .main_contents .plus {
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.today_layer.type2 .main_contents .plus:hover {
+    text-decoration: none;
+}
+
+.today_layer.type2 .main_contents .plus span {
+    display: block;
+    padding-left: 34px;
+    height: 54px;
+    background: url('https://web.archive.org/web/20241008001102im_/https://image.donga.com/mlbpark/img/icon_ballplus.png') no-repeat 0 50%;
+    font-size: 14px;
+    color: #111;
+    letter-spacing: 1px;
+    line-height: 54px;
+}
+
+.today_layer.type2 .main_contents .tit_today {
+    width: 100%;
+    font-family: 'Noto Sans KR';
+    line-height: 50px;
+    padding: 0 10px 0 20px;
+    box-sizing: border-box;
+}
+
+/*240422 수정*/
+.today_layer.type2 .main_contents .tab_btn {
+    right: unset;
+    left: 170px;
+    top: 12px;
+}
+
+/*240422 수정*/
+.today_layer.type2 .main_contents .tab_btn a {
+    width: 85px;
+}
+
+/*240422 수정*/
+.today_layer.type2 .main_contents .tab_btn a:first-child {
+    width: 87.83px;
+}
+
+/*240422 수정*/
+.today_layer.type2 .main_contents .tab_btn a img {
+    width: 100%;
+}
+
+/*240422 수정*/
+.lists_today_contxt {
+    width: 1030px;
+    background: #fff;
+}
+
+.lists_today_contxt > div {
+    display: table;
+    width: 1030px;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/*.lists_today_contxt ul:first-child {border-left:none;width:246px;}*/
+.lists_today {
+    float: left;
+    margin: 0 -1px 0 0;
+    padding: 0 18px 12px;
+    width: 307px;
+    border-right: 1px solid #ebebeb;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+    background: none;
+}
+
+.lists_today .items {
+    position: static;
+    border: none;
+    padding: 0 0 0 7px;
+    width: 280px;
+    min-height: 24px;
+    background: url("https://web.archive.org/web/20241008001102im_/https://image.donga.com/challenge/mlbpark/images/dot_gray.gif") no-repeat 0 9px;
+}
+
+.lists_today+.lists_today+.lists_today {
+    border-right: none;
+}
+
+.lists_today .items .text {
+    width: 307px !important;
+    padding: 0;
+}
+
+.lists_today .items .text .title {
+    width: 220px !important;
+}
+
+.lists_today .items .text .title a {
+    width: 295px !important;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.lists_today .items .photo {
+    display: none;
+}
+
+.lists_today .items .text .nick {
+    display: none;
+}
+
+.lists_today .items .text .date {
+    display: none;
+}
+
+.lists_today .items .text .title {
+    padding: 0 5px 0 0;
+    line-height: 18px;
+    font-size: 14px;
+}
+
+.lists_today .items .text .title a {
+}
+
+.lists_today .items .text .title a:hover {
+    color: #25a;
+}
+
+.lists_today .items .text .title a:visited {
+    color: #999;
+}
+
+.today_layer {
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+
+.today_layer_obj {
+    display: block;
+    width: 1030px;
+    margin: 0 auto;
+    border: 1px solid #dbdbdb;
+    text-align: left;
+}
+
+
+
+
+
+
+/*240923 수정*/
+.view_head {
+    width: 100% auto;
+    padding-top: 15px;
+    border-left: 1px solid #ced0d7;
+    border-right: 1px solid #ced0d7;
+    background: #fff;
+}
+
+.view_head .items {
+    padding: 0 10px;
+}
+
+.view_head .items .photo {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    border-radius: 100%;
+    border: 1px solid #bfbfbf;
+}
+
+.view_head .items .photo a img {
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 100%;
+}
+
+.view_head .items .text div {
+    display: inline;
+}
+
+.view_head .items .text {
+    display: inline-block;
+    padding: 0 10px 17px 10px;
+    width: 665px;
+}
+
+.view_head .items .text .nick {
+    color: #25a;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.view_head .items .text .val {
+    color: #767676;
+    font-size: 13px;
+}
+
+.view_head .items .text .date {
+    color: #666;
+    font-size: 13px;
+}
+
+.view_head .items .font {
+    display: none;
+}
+
+.view_head .items .text .text1 {
+    position: absolute;
+    top: 20px;
+    right: 55px;
+}
+
+.view_head .items .text .text1 .img {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.view_head .items .text .bat {
+    top: 11px;
+}
+
+.view_head .items .text .text3 {
+    margin-right: 17px;
+    color: #767676;
+    font-size: 12px;
+}
+
+.view_head .items .text .text3 span em {
+    color: #9d9d9d;
+    font-style: normal;
+}
+
+.view_head .items .text .text3 .val {
+    color: #9d9d9d;
+}
+
+.view_head .items .text .text3 .txt_bar {
+    color: #9d9d9d;
+    font-size: 11px;
+}
+
+.view_head .items .text .text4 span em {
+    color: #9d9d9d;
+    font-style: normal;
+}
+
+.view_head .items .text .text4 {
+    color: #767676;
+    font-size: 12px;
+}
+
+.view_head .items .text .text2 .tit {
+    margin-left: 5px;
+    color: #767676;
+    font-size: 12px;
+}
+
+.view_head .items .text .text2 .val {
+    color: #000;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.view_head .items .text .text2 #replyCnt {
+    color: #ff4b1b;
+    font-weight: bold;
+}
+
+.view_head .items .text .text_left {
+    float: right;
+}
+
+.view_head .items .text .text_right {
+    float: left;
+}
+
+.view_context {
+    overflow: hidden;
+    width: 100% auto;
+    border: 1px solid #ced0d7;
+    border-top: 0;
+    background: #fff;
+    margin-bottom: 10px;
+}
+
+.view_context .titles {
+    display: block;
+    padding: 8px;
+    padding-top: 18px;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.view_context .titles span {
+    color: #25a;
+    padding-right: 5px;
+}
+
+.view_context .ar_txt {
+    width: 100% auto;
+    padding: 20px;
+    font-size: 13px !important;
+    line-height: 22px !important;
+    color: #343434 !important;
+    word-break: break-word;
+     font-family: "돋움", Dotum, sans-serif, Arial;
+    border-top: 1px solid #ededed;
+    background: #f8f7f7;
+}
+
+/* 20161223 추가 */
+.view_context .ar_txt img {
+    display: block;
+    max-width: 640px;
+    height: auto;
+}
+
+.view_context .ar_txt embed {
+    max-width: 640px;
+    min-height: 315px;
+}
+
+/* 20170421 수정 김하나 */
+.view_context .ar_txt table {
+    max-width: 640px;
+    height: auto;
+}
+
+.view_context .ar_txt iframe {
+    width: 640px !important;
+    height: 360px !important;
+    border: none;
+}
+
+.view_context .ar_txt video {
+    display: block;
+    max-width: 640px;
+    vertical-align: top;
+}
+
+.view_context .ar_txt .event_iframe iframe {
+    width: 100%;
+    height: 3220px !important;
+}
+
+/* //20161223 추가 */
+/* 20240513 폰팍추가 */
+.view_context .ar_txt2 {
+    width: 100% auto;
+    padding: 20px;
+    !important;
+    word-break: break-word;
+    border-top: 1px solid #ededed;
+    background: #f8f7f7;
+}
+
+.view_context .ar_txt2 img {
+    max-width: 640px;
+    height: auto;
+}
+
+.view_context .ar_txt2 embed {
+    max-width: 640px;
+    min-height: 315px;
+}
+
+.view_context .ar_txt2 table {
+    max-width: 640px;
+    height: auto;
+}
+
+.view_context .ar_txt2 video {
+    display: block;
+    max-width: 640px;
+    vertical-align: top;
+}
+
+.view_context .ar_txt_tool {
+    height: 45px;
+    padding-right: 10px;
+    line-height: 45px;
+    border-top: 1px solid #e7e7e7;
+    font-size: 12px;
+    text-align: right;
+}
+
+.view_context .ar_txt_tool a {
+    width: 100% auto;
+    color: #25a;
+}
+
+.view_context .ar_txt_tool .tool_left {
+    display: inline;
+    width: auto;
+}
+
+.view_context .ar_txt_tool .tool_left span {
+    margin-left: 15px;
+}
+
+.view_context .ar_txt_tool .tool_left .icon_share {
+    display: inline-block;
+    width: 12px;
+    height: 13px;
+    margin-left: 3px;
+    background: url('https://image.donga.com/mlbpark/img/icon_share.png') no-repeat 0 0;
+    vertical-align: middle;
+}
+
+/* 20201214 추가 */
+.view_context .ar_txt_tool .tool_left .icon_scrap {
+    display: inline-block;
+    width: 15px;
+    height: 12px;
+    margin-left: 3px;
+    background: url('https://image.donga.com/challenge/mlbpark/images/icon_scrap01.gif') no-repeat 0 0;
+    vertical-align: middle;
+}
+
+.view_context .ar_txt_tool .tool_right {
+    display: inline;
+    width: auto;
+}
+
+.view_context .ar_txt_tool .tool_right span {
+    display: inline-block;
+    border: 1px solid #ff3737;
+    height: 21px;
+    line-height: 21px;
+    text-align: center;
+    margin: 0 0 0 15px;
+    padding: 0 7px;
+    color: #ff3737;
+    border-radius: 5px;
+}
+
+.view_context .ar_txt_tool .tool_right span a {
+    color: #ff3737;
+}
+
+/* ev라운지 기사 240219 */
+.inner_article {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 44px;
+    margin-bottom: 10px;
+}
+
+.inner_article .inner_article_list {
+    width: 100%;
+    max-width: calc(100% - 150px);
+}
+
+.inner_article .article_item p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.inner_article .article_item p::before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #618de6;
+    border-radius: 50%;
+    margin-right: 7px;
+    flex-shrink: 0;
+}
+
+.inner_article .article_item p a {
+    font-family: 'Noto Sans KR';
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    letter-spacing: -0.03em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.inner_article .btn_more {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Noto Sans KR';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.05em;
+    color: #3c73e2;
+    flex-shrink: 0;
+    margin-left: 36px;
+}
+
+.inner_article .btn_more::after {
+    content: '';
+    display: block;
+    width: 7px;
+    height: 11px;
+    background: url(../img/ic_arr_r_blue.png)no-repeat;
+    margin-left: 5px;
+}
+
+/* 추천 공유하기 */
+.view_context .tool_cont {
+    padding: 30px 0 0 0;
+    text-align: center;
+}
+
+.view_context .tool_cont button {
+    position: relative;
+    display: inline-block;
+    width: 57px;
+    height: 57px;
+    margin: 0 9px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.view_context .tool_cont button:hover {
+    text-decoration: none;
+}
+
+.view_context .tool_cont button span {
+    display: block;
+    font-size: 16px;
+    color: #666;
+    font-weight: bold;
+}
+
+.view_context .tool_cont .wr_recommend:before {
+    content: '';
+    display: block;
+    width: 57px;
+    height: 57px;
+    margin-bottom: 4px;
+    background: url('https://image.donga.com/mlbpark/img/icon_recommend01.png') no-repeat 0 0;
+    z-index: 1;
+    color-scheme: light only;
+}
+
+.view_context .tool_cont .wr_recommend.on:before {
+    content: '';
+    display: block;
+    background: url('https://image.donga.com/mlbpark/img/icon_recommend02.png') no-repeat 0 0;
+    z-index: 1;
+    color-scheme: light only;
+}
+
+.view_context .tool_cont .wr_share:before {
+    content: '';
+    display: block;
+    width: 57px;
+    height: 57px;
+    margin-bottom: 4px;
+    background: url('https://image.donga.com/mlbpark/img/icon_share01.png') no-repeat 0 0;
+}
+
+/* 추천하기 추천수 240416 */
+.view_context .tool_cont .wr_recommend .count_recommend {
+    display: block;
+    position: absolute;
+    right: 47px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: fit-content;
+    height: 40px;
+    border: 3px solid #fb6b65;
+    border-right: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 0 22px 0 15px;
+    box-sizing: border-box;
+    font-family: "Noto Sans KR";
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #fb6b65;
+    letter-spacing: -0.05em;
+    word-break: keep-all;
+    z-index: 0;
+    color-scheme: light only;
+}
+
+.view_context .tool_cont .wr_recommend.on .count_recommend {
+    color: #fff;
+    background-color: #fb6b65;
+    overflow: hidden;
+    border: 0;
+    line-height: 38px;
+    padding: 0 22px 0 17px;
+    color-scheme: light only;
+}
+
+.view_context .tool_cont .wr_recommend.on .count_recommend::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: -48px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    color-scheme: light only;
+}
+
+/* 20210401 추가 */
+.view_context p {
+    margin: 0
+}
+
+.view_suggest {
+    width: 100% auto;
+    background: #fff;
+    margin-bottom: 10px;
+}
+
+.view_suggest .title {
+    width: 100% auto;
+    height: 42px;
+    border: 1px solid #ced0d7;
+    background: #f0f2f9;
+}
+
+.view_suggest .title .tool_left {
+    float: left;
+    padding: 0 20px;
+    height: 42px;
+    line-height: 42px;
+    vertical-align: middle;
+    color: #1b346a;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.view_suggest .title .tool_left em {
+    font-style: normal;
+    color: #5181e3;
+}
+
+.view_suggest .title .tool_left a {
+    float: left;
+    height: 42px;
+    line-height: 42px;
+    vertical-align: middle;
+    color: #333;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.view_suggest .title .tool_left span {
+    color: #1f55ab;
+    margin: 0 2px;
+}
+
+.view_suggest .title .tool_right a {
+    float: right;
+    padding: 0 15px 0 0;
+    margin-right: 20px;
+    height: 42px;
+    line-height: 42px;
+    vertical-align: middle;
+    color: #2c4273;
+    background: url('https://image.donga.com/challenge/mlbpark/images/icon_list_arr03.png') no-repeat right center;
+}
+
+.view_suggest .title .tool_right a.on {
+    background: url('https://image.donga.com/challenge/mlbpark/images/icon_list_arr02.png') no-repeat right center;
+}
+
+.view_suggest .title .btn a {
+    display: none;
+    background: #fff;
+    color: #5181e3;
+    padding: 0 10px;
+    height: 42px;
+    line-height: 42px;
+    vertical-align: middle;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.view_suggest ul {
+    width: 100% auto;
+    border: 1px solid #ced0d7;
+    border-top: 0;
+}
+
+.view_suggest ul li {
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid #ccc;
+    padding: 10px 10px 10px 20px;
+}
+
+.view_suggest ul li div {
+    float: left;
+}
+
+.view_suggest ul li:nth-child(even) {
+    background: #f7f7f8;
+}
+
+.view_suggest ul li .val {
+    margin: 0;
+    margin-right: 10px;
+    padding: 0 0 0 15px;
+    color: #5181e3;
+    background: url('https://image.donga.com/challenge/mlbpark/images/icon_list_arr01.png') no-repeat 0 center;
+}
+
+.view_suggest ul li .date {
+    position: absolute;
+    top: 9px;
+    right: 20px;
+    color: #9d9d9d;
+}
+
+.view_suggest ul li .subject {
+    padding-right: 100px;
+}
+
+.view_suggest ul li .subject a {
+    padding: 0;
+    margin: 0;
+    color: #000;
+}
+
+.reply_zone {
+    margin-bottom: 0;
+    background: #fff;
+    border-bottom: 0;
+}
+
+.reply_zone .title {
+    background: #fff;
+}
+
+.reply_zone .title .tool_left {
+    color: #5f6679;
+}
+
+.reply_zone .title .tool_left span {
+    color: #ff4343;
+}
+
+.reply_list {
+    width: 100% auto;
+    padding: 10px 5px 10px 5px;
+    background: #cfd7e9;
+}
+
+.reply_list .name {}
+
+.reply_list .date {}
+
+.reply_list .ip {}
+
+.reply_list .other_reply {
+    width: auto;
+    margin: 0 0;
+}
+
+.reply_list .other_reply .txt_box {
+    width: 100%;
+}
+
+.reply_list .other_reply .txt {
+    position: relative;
+    float: left;
+    max-width: 90%;
+    padding: 15px 10px;
+    background: #fff;
+    border-radius: 0 10px 10px 10px;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    text-align: left;
+     font-family: "돋움", Dotum, sans-serif, Arial;
+}
+
+.reply_list .other_reply .txt span {
+    color: #7b828b;
+}
+
+.reply_list .other_reply .txt .re_txt {
+    clear: both;
+    overflow: hidden;
+    display: block;
+    color: #333;
+    text-align: left;
+    line-height: 140%;
+}
+
+.reply_list .other_con {
+    overflow: hidden;
+    position: relative;
+    margin: 0 0 0 0;
+    padding: 10px 0 0 49px;
+}
+
+.reply_list .other_con a {
+    float: left;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    text-align: left;
+}
+
+.reply_list .other_con a span {
+    margin-right: 6px;
+}
+
+.reply_list .other_con .photo {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 37px;
+    height: 37px;
+    border-radius: 100%;
+    border: 1px solid #bfbfbf;
+}
+
+.reply_list .other_con .photo img {
+    width: 100%;
+    border-radius: 100%;
+    border: none;
+}
+
+.reply_list .other_con .txt .icon_arr {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -8px;
+    width: 8px;
+    height: 9px;
+    background: url('https://image.donga.com/challenge/mlbpark/images/icon_arr01.png') no-repeat 0 0;
+    background-size: 8px 9px;
+}
+
+.reply_list .other_reply .btn_del {
+    position: absolute;
+    bottom: -1px;
+    right: -15px;
+    display: block;
+    width: 31px;
+    height: 15px;
+    background: url('https://image.donga.com/challenge/mlbpark/images/btn_del01.png') no-repeat 0 0;
+    background-size: 31px 15px;
+    z-index: 0;
+}
+
+.reply_list .icon_mark {
+    display: block;
+    width: 37px;
+    height: 37px;
+    overflow: hidden;
+}
+
+.reply_list .other_reply .txt .btn_edit {
+    display: inline-block;
+    margin: 0 1px 0 0;
+    color: #7a838c;
+    font-size: 11px;
+}
+
+.reply_list .other_reply .txt .btn_redel {
+    display: inline-block;
+    margin: 0;
+    color: #7a838c;
+    font-size: 11px;
+}
+
+.reply_list .other_reply .txt .btn_rebox {
+    float: right;
+    padding-left: 15px;
+}
+
+.reply_list .other_reply .txt .btn_rebox a {
+    float: none;
+}
+
+.reply_list .other_reply .txt .btn_rebox .txt_bar {
+    color: #c7cad4;
+    font-size: 11px;
+    margin: 0;
+}
+
+.reply_list .my_reply {
+    width: auto;
+    text-align: right;
+}
+
+.reply_list .my_reply .txt_box {
+    width: 100%;
+}
+
+.reply_list .my_reply .txt {
+    position: relative;
+    float: right;
+    max-width: 90%;
+    padding: 4px 4px;
+    background: #fcffca;
+    border-radius: 10px 0 10px 10px;
+    color: #7b828b;
+    text-align: left;
+    line-height: 130%;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    text-align: right;
+}
+
+.reply_list .my_reply .txt span {
+    color: #7b828b;
+    margin-right: 6px;
+}
+
+.reply_list .my_reply .txt .re_txt {
+    clear: both;
+    display: block;
+    color: #333;
+    text-align: left;
+    line-height: 140%;
+}
+
+.reply_list .my_reply .txt .btn_edit {
+    display: inline-block;
+    margin: 0 1px 0 0;
+    color: #7a838c;
+    font-size: 11px;
+}
+
+.reply_list .my_reply .txt .btn_redel {
+    display: inline-block;
+    margin: 0;
+    color: #7a838c;
+    font-size: 11px;
+}
+
+.reply_list .my_con .btn_del {
+    position: absolute;
+    bottom: -1px;
+    left: -15px;
+    display: block;
+    width: 31px;
+    height: 15px;
+    background: url('https://image.donga.com/challenge/mlbpark/images/btn_del02.png') no-repeat 0 0;
+    background-size: 31px 15px;
+    z-index: 0;
+}
+
+.reply_list .my_con {
+    overflow: hidden;
+    position: relative;
+    padding: 10px 49px 0 0;
+}
+
+.reply_list .my_con a {
+    float: left;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    text-align: left;
+}
+
+.reply_list .my_con .photo {
+    position: absolute;
+    top: 10px;
+    right: 2px;
+    width: 37px;
+    height: 37px;
+    border-radius: 100%;
+    border: 1px solid #bfbfbf;
+}
+
+.reply_list .my_con .photo img {
+    width: 100%;
+    border-radius: 100%;
+    border: none;
+}
+
+.reply_list .my_con .txt .icon_arr {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -14px;
+    width: 8px;
+    height: 9px;
+    background: url('https://image.donga.com/challenge/mlbpark/images/icon_arr02.png') no-repeat 0 0;
+    background-size: 8px 9px;
+}
+
+.reply_list .my_reply .txt .btn_rebox {
+    float: right;
+    padding-left: 15px;
+}
+
+.reply_list .my_reply .txt .btn_rebox a {
+    float: none;
+}
+
+.reply_list .my_reply .txt .btn_rebox .txt_bar {
+    color: #c7cad4;
+    font-size: 11px;
+    margin: 0;
+}
+
+/* 운영진 컬러 */
+.reply_list .executive .txt {
+    background: #5181e3;
+    color: #fff;
+}
+
+.reply_list .executive .txt span {
+    color: #fff;
+    opacity: 0.7;
+}
+
+.reply_list .executive .txt .re_txt {
+    color: #fff;
+    opacity: 1;
+}
+
+.reply_list .executive .txt .btn_edit {
+    color: #fff;
+}
+
+.reply_list .executive .txt .btn_redel {
+    color: #fff;
+}
+
+.reply_list .executive .txt .btn_rebox {
+    opacity: 0.7;
+}
+
+.reply_list .my_con.executive .txt .icon_arr {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -14px;
+    width: 8px;
+    height: 9px;
+    background: url('https://image.donga.com/challenge/mlbpark/images/icon_arr04.png') no-repeat 0 0;
+    background-size: 8px 9px;
+    opacity: 1;
+}
+
+.reply_list .other_con.executive .txt .icon_arr {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -8px;
+    width: 8px;
+    height: 9px;
+    background: url('https://image.donga.com/challenge/mlbpark/images/icon_arr05.png') no-repeat 0 0;
+    background-size: 8px 9px;
+    opacity: 1;
+}
+
+/* 240910 수정 */
+/* 댓글 영역 개편 */
+.reply_zone.type_re {
+    padding: 0 20px;
+    box-sizing: border-box;
+    border: 1px solid #CED0D7;
+    border-bottom: 0;
+}
+
+.view_suggest.type_re .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: unset;
+    border: 0;
+    border-bottom: 0;
+    padding: 23px 0 9px;
+    border-bottom: 1px solid #000;
+}
+
+.view_suggest.type_re .title .tool_left {
+    height: unset;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1em;
+    color: #000;
+    padding: 0;
+}
+
+.view_suggest .title .tool_left span {
+    color: #205BC3;
+}
+
+.view_suggest.type_re .title .btn_reply {
+    padding: 9px 17px;
+    border-radius: 2px;
+    background: #205BC3;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1em;
+    border: 0;
+}
+
+.reply_list.type_re {
+    width: 100%;
+    padding: 10px 20px 20px;
+    box-sizing: border-box;
+    border: 1px solid #CED0D7;
+    border-top: 0;
+    border-bottom: 0;
+    background-color: #fff;
+}
+
+.reply_list.type_re .other_con {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4px;
+
+    background: #FFF;
+    padding: 4px 4px;
+    margin-bottom: -1px;
+    box-sizing: border-box;
+    overflow: unset;
+    border-radius: 0px;
+    border-style: solid none solid none
+}
+
+.reply_list.type_re .other_con.replied {
+    width: calc(100% - 32px);
+    margin-left: 32px;
+}
+
+.reply_list.type_re .other_con.replied_re {
+    width: calc(100% - 64px);
+    margin-left: 64px;
+}
+
+.reply_list.type_re .other_con.replied::before,
+.reply_list.type_re .other_con.replied_re::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -22px;
+    top: 19px;
+    width: 10px;
+    height: 10px;
+    border-left: 1px dashed #CCC;
+    border-bottom: 1px dashed #CCC;
+    box-sizing: border-box;
+}
+
+.reply_list.type_re .other_con .photo {
+    position: relative;
+    top: unset;
+    left: unset;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.reply_list.type_re .other_con .photo a {
+    float: unset;
+    display: block;
+    width: 100%;
+    margin-bottom: unset;
+    text-decoration: none;
+    text-align: unset;
+}
+
+.reply_list.type_re .other_con .photo img {
+    width: 100%;
+    border-radius: unset;
+    border: none;
+}
+
+.reply_list.type_re .other_reply {
+    width: 100%;
+}
+
+.reply_list.type_re .other_reply .txt_box {
+    width: 100%;
+}
+
+.reply_list.type_re .other_reply .txt {
+    position: relative;
+    float: unset;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 0;
+    background: unset;
+    border-radius: unset;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    text-align: left;
+    font-family: inherit;
+}
+
+.reply_list.type_re .other_con a {
+    float: unset;
+    display: block;
+    margin-bottom: 0;
+    text-decoration: none;
+    text-align: left;
+    vertical-align: top;
+}
+
+.reply_list.type_re .other_reply .txt a span {
+    font-family: inherit;
+    font-size: 7px;
+    font-weight: 200;
+    line-height: 9px;
+    color: #CCC;
+    vertical-align: top;
+    
+}
+
+.reply_list.type_re .other_reply .txt a span.name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 200;
+    line-height: 14px;
+    color: #848484;
+    margin-bottom: 0px;
+    padding-top: 2px;
+}
+
+.reply_list.type_re .other_reply .txt .btn_rebox {
+    float: unset;
+    padding-left: 0;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.reply_list.type_re .other_reply .txt .btn_rebox a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 200;
+    line-height: normal;
+    color: #BDBDBD;
+}
+
+.reply_list.type_re .other_reply .txt .btn_rebox a::before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-right: 6px;
+    opacity: 40%
+}
+
+.reply_list.type_re .other_reply .txt .btn_rebox a.btn_replied::before {
+    background: url(https://image.donga.com/mlbpark/img/icon_reply2.png)no-repeat;
+}
+
+.reply_list.type_re .other_reply .txt .btn_rebox a.btn_edit::before {
+    background: url(https://image.donga.com/mlbpark/img/icon_edit.png)no-repeat;
+    background-position: 0px 1px;
+}
+
+.reply_list.type_re .other_reply .txt .btn_rebox a.btn_redel::before {
+    background: url(https://image.donga.com/mlbpark/img/icon_delete.png)no-repeat;
+}
+
+.reply_list.type_re .other_reply .txt .btn_rebox a::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 10px;
+    background-color: #bbb;
+    margin: 0 6px;
+}
+
+.reply_list.type_re .other_reply .txt .btn_rebox a:last-child:after {
+    display: none;
+}
+
+.reply_list.type_re .other_reply .txt .re_txt {
+    clear: both;
+    overflow: hidden;
+    display: block;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 200;
+    color: #333;
+    text-align: left;
+    line-height: 140%;
+    width: 100%;
+    margin-top: 0px;
+}
+
+.reply_list.type_re .other_reply .txt .re_txt .name_re {
+    font-size: 10px;
+    font-weight: 200;
+    line-height: 140%;
+    color: #A4A4A4;
+    margin-right: 5px;
+}
+
+.reply_list.type_re .my_con {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4px;
+    border-radius: 0px;
+
+    background: #FFFFFF;
+    padding: 4px 4px;
+    margin-bottom: -1px;
+    box-sizing: border-box;
+    overflow: unset;
+    border-style: solid none solid none
+}
+
+.reply_list.type_re .my_con.replied {
+    width: calc(100% - 32px);
+    margin-left: 32px;
+}
+
+.reply_list.type_re .my_con.replied_re {
+    width: calc(100% - 64px);
+    margin-left: 64px;
+}
+
+.reply_list.type_re .my_con.replied::before,
+.reply_list.type_re .my_con.replied_re::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -22px;
+    top: 19px;
+    width: 10px;
+    height: 10px;
+    border-left: 1px dashed #ccc;
+    border-bottom: 1px dashed #ccc;
+    box-sizing: border-box;
+}
+
+.reply_list.type_re .my_con .photo {
+    position: relative;
+    top: unset;
+    left: unset;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.reply_list.type_re .my_con .photo a {
+    float: unset;
+    display: block;
+    width: 100%;
+    margin-bottom: unset;
+    text-decoration: none;
+    text-align: unset;
+}
+
+.reply_list.type_re .my_con .photo img {
+    width: 100%;
+    border-radius: unset;
+    border: none;
+}
+
+.reply_list.type_re .my_reply {
+    width: 100%;
+}
+
+.reply_list.type_re .my_reply .txt_box {
+    width: 100%;
+}
+
+.reply_list.type_re .my_reply .txt {
+    position: relative;
+    float: unset;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 0;
+    background: unset;
+    border-radius: unset;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    text-align: left;
+    font-family: inherit;
+}
+
+.reply_list.type_re .my_con a {
+    float: unset;
+    display: block;
+    margin-bottom: 0;
+    text-decoration: none;
+    text-align: left;
+}
+
+.reply_list.type_re .my_reply .txt a span {
+    font-family: inherit;
+    font-size: 7px;
+    font-weight: 200;
+    line-height: 9px;
+    color: #ccc;
+    vertical-align: top;
+}
+
+.reply_list.type_re .my_reply .txt a span.name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 200;
+    line-height: 14px;
+    color: #848484;
+    margin-bottom: 0px;
+    padding-top: 0px;
+}
+
+.reply_list.type_re .my_con .txt a span.name::after {
+    content: '작성자';
+    display: block;
+    width: 36px;
+    height: 12px;
+    border-radius: 4px;
+    background-color: #A9BCF5;
+    font-size: 8px;
+    font-weight: 200;
+    line-height: 12px;
+    color: #fff;
+    text-align: center middle;
+    margin-left: 5px;
+}
+
+.reply_list.type_re .my_reply .txt .btn_rebox {
+    float: unset;
+    padding-left: 0;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.reply_list.type_re .my_reply .txt .btn_rebox a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 200;
+    line-height: normal;
+    color: #BDBDBD;
+}
+
+.reply_list.type_re .my_reply .txt .btn_rebox a::before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-right: 6px;
+    opacity: 40%
+}
+
+.reply_list.type_re .my_reply .txt .btn_rebox a.btn_replied::before {
+    background: url(https://image.donga.com/mlbpark/img/icon_reply2.png)no-repeat;
+}
+
+.reply_list.type_re .my_reply .txt .btn_rebox a.btn_edit::before {
+    background: url(https://image.donga.com/mlbpark/img/icon_edit.png)no-repeat;
+    background-position: 0px 1px;
+}
+
+.reply_list.type_re .my_reply .txt .btn_rebox a.btn_redel::before {
+    background: url(https://image.donga.com/mlbpark/img/icon_delete.png)no-repeat;
+}
+
+.reply_list.type_re .my_reply .txt .btn_rebox a::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 10px;
+    background-color: #bbb;
+    margin: 0 6px;
+}
+
+.reply_list.type_re .my_reply .txt .btn_rebox a:last-child:after {
+    display: none;
+}
+
+.reply_list.type_re .my_reply .txt .re_txt {
+    clear: both;
+    overflow: hidden;
+    display: block;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 200;
+    color: #333;
+    text-align: left;
+    line-height: 140%;
+    width: 100%;
+    margin-top: 0px;
+}
+
+.reply_list.type_re .my_reply .txt .re_txt .name_re {
+    font-size: 10px;
+    font-weight: 200;
+    line-height: 140%;
+    color: #A4A4A4;
+    margin-right: 5px;
+}
+
+.reply_list.type_re .other_con.executive,
+.reply_list.type_re .my_con.executive {
+    border: 1px solid #FA8B85;
+    background: #FFF5F5;
+}
+
+.reply_list.type_re .executive .txt .btn_rebox {
+    opacity: unset;
+}
+
+.reply_list.type_re .executive .txt span {
+    opacity: unset;
+}
