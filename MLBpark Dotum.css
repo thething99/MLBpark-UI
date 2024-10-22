@@ -1,9 +1,9 @@
 /* ==UserStyle==
 @name         MLBpark Dotum
-@version      20241022.07.13
+@version      20241022.23.43
 @namespace    https://userstyles.world/user/thething99
-@description  mlbpark.donga.com Custom Tweak by 1q842024-10-21 ver. a01
-@author       thething99
+@description  mlbpark.donga.com Custom UI
+@author       1Q84
 @license      CC BY NC
 ==/UserStyle== */
 
@@ -1462,12 +1462,12 @@ input {
     gap: 4px;
 
     background: #FFF;
-    padding: 4px 4px;
-    margin-bottom: -1px;
+    padding: 16px 4px 16px 4px;
+    margin-bottom: 0px;
     box-sizing: border-box;
     overflow: unset;
     border-radius: 0px;
-    border-style: solid none solid none
+    border-style: none none solid none
 }
 
 .reply_list.type_re .other_con.replied {
@@ -1485,12 +1485,12 @@ input {
     content: '';
     display: block;
     position: absolute;
-    left: -22px;
-    top: 19px;
+    left: -15px;
+    top: 16px;
     width: 10px;
     height: 10px;
-    border-left: 1px dashed #CCC;
-    border-bottom: 1px dashed #CCC;
+    border-left: 1px dashed #AAA;
+    border-bottom: 1px dashed #AAA;
     box-sizing: border-box;
 }
 
@@ -1563,24 +1563,62 @@ input {
     line-height: 9px;
     color: #CCC;
     vertical-align: top;
+    flex-basis: auto;
     
 }
 
 .reply_list.type_re .other_reply .txt a span.name {
+    float: left;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     font-family: inherit;
-    font-size: 11px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 14px;
+    color: #2E2E2E;
+    margin-bottom: 0px;
+    padding-top: 2px;
+    
+    
+}
+    
+      /* 
+    */
+    
+.reply_list.type_re .other_reply .txt a span.date {
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: inherit;
+    font-size: 10px;
     font-weight: 200;
     line-height: 14px;
-    color: #848484;
+    color: #BDBDBD;
+    margin-bottom: 0px;
+    padding-top: 2px;
+    margin-left: 12px;
+}
+
+.reply_list.type_re .other_reply .txt a span.ip {
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 200;
+    line-height: 14px;
+    color: #BDBDBD;
     margin-bottom: 0px;
     padding-top: 2px;
 }
-
+    /* 
+    */
+    
 .reply_list.type_re .other_reply .txt .btn_rebox {
-    float: unset;
+   
     padding-left: 0;
     margin-left: auto;
     display: flex;
@@ -1589,6 +1627,7 @@ input {
 }
 
 .reply_list.type_re .other_reply .txt .btn_rebox a {
+   
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -1645,15 +1684,15 @@ input {
     text-align: left;
     line-height: 140%;
     width: 100%;
-    margin-top: 0px;
+    margin-top: 10px;
 }
 
 .reply_list.type_re .other_reply .txt .re_txt .name_re {
-    font-size: 10px;
-    font-weight: 200;
+    font-size: 13px;
+    font-weight: 600;
     line-height: 140%;
-    color: #A4A4A4;
-    margin-right: 5px;
+    color: #A0A0A0;
+    margin-right: 10px;
 }
 
 .reply_list.type_re .my_con {
@@ -1661,14 +1700,14 @@ input {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 4px;
-    border-radius: 0px;
 
-    background: #FFFFFF;
-    padding: 4px 4px;
-    margin-bottom: -1px;
+    background: #FFF;
+    padding: 16px 4px 16px 4px;
+    margin-bottom: 0px;
     box-sizing: border-box;
     overflow: unset;
-    border-style: solid none solid none
+    border-radius: 0px;
+    border-style: none none solid none
 }
 
 .reply_list.type_re .my_con.replied {
@@ -1686,12 +1725,12 @@ input {
     content: '';
     display: block;
     position: absolute;
-    left: -22px;
-    top: 19px;
+    left: -15px;
+    top: 16px;
     width: 10px;
     height: 10px;
-    border-left: 1px dashed #ccc;
-    border-bottom: 1px dashed #ccc;
+    border-left: 1px dashed #AAA;
+    border-bottom: 1px dashed #AAA;
     box-sizing: border-box;
 }
 
@@ -1746,6 +1785,7 @@ input {
     word-break: break-word;
     text-align: left;
     font-family: inherit;
+    
 }
 
 .reply_list.type_re .my_con a {
@@ -1761,38 +1801,71 @@ input {
     font-size: 7px;
     font-weight: 200;
     line-height: 9px;
-    color: #ccc;
+    color: #CCC;
     vertical-align: top;
+    flex-basis: auto;
 }
 
 .reply_list.type_re .my_reply .txt a span.name {
+    float: left;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     font-family: inherit;
-    font-size: 11px;
-    font-weight: 200;
+    font-size: 13px;
+    font-weight: 600;
     line-height: 14px;
-    color: #848484;
+    color: #2E2E2E;
     margin-bottom: 0px;
-    padding-top: 0px;
+    padding-top: 2px;
 }
 
 .reply_list.type_re .my_con .txt a span.name::after {
     content: '작성자';
     display: block;
     width: 36px;
-    height: 12px;
+    height: 13px;
     border-radius: 4px;
     background-color: #A9BCF5;
-    font-size: 8px;
-    font-weight: 200;
-    line-height: 12px;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 13px;
     color: #fff;
-    text-align: center middle;
+    text-align: center;
     margin-left: 5px;
 }
 
+.reply_list.type_re .my_con .txt a span.date {
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 200;
+    line-height: 14px;
+    color: #BDBDBD;
+    margin-bottom: 0px;
+    padding-top: 2px;
+    margin-left: 12px;
+}
+
+.reply_list.type_re .my_con .txt a span.ip {
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 200;
+    line-height: 14px;
+    color: #BDBDBD;
+    margin-bottom: 0px;
+    padding-top: 2px;
+}
+    
+    
+    
 .reply_list.type_re .my_reply .txt .btn_rebox {
     float: unset;
     padding-left: 0;
@@ -1859,15 +1932,15 @@ input {
     text-align: left;
     line-height: 140%;
     width: 100%;
-    margin-top: 0px;
+    margin-top: 10px;
 }
 
 .reply_list.type_re .my_reply .txt .re_txt .name_re {
-    font-size: 10px;
-    font-weight: 200;
+    font-size: 13px;
+    font-weight: 600;
     line-height: 140%;
-    color: #A4A4A4;
-    margin-right: 5px;
+    color: #A0A0A0;
+    margin-right: 10px;
 }
 
 .reply_list.type_re .other_con.executive,
