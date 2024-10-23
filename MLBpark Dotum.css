@@ -1,6 +1,6 @@
 /* ==UserStyle==
-@name         MLBpark Dotum
-@version      20241022.23.43
+@name         MLBpark dotum
+@version      20241023.19.25
 @namespace    https://userstyles.world/user/thething99
 @description  mlbpark.donga.com Custom UI
 @author       1Q84
@@ -286,8 +286,8 @@ input {
     width: 350px;
     color: #333;
     text-align: left;
-    font-size: 12px;
-    font-family: "돋움", "Gulim";
+    font-size: 13px;
+    font-family: "돋움", Dotum, Arial;
 }
 
 .lists .items .text .title span {
@@ -1462,7 +1462,7 @@ input {
     gap: 4px;
 
     background: #FFF;
-    padding: 16px 4px 16px 4px;
+    padding: 14px 4px 14px 4px;
     margin-bottom: 0px;
     box-sizing: border-box;
     overflow: unset;
@@ -1471,13 +1471,13 @@ input {
 }
 
 .reply_list.type_re .other_con.replied {
-    width: calc(100% - 32px);
-    margin-left: 32px;
+    width: calc(100% - 24px);
+    margin-left: 24px;
 }
 
 .reply_list.type_re .other_con.replied_re {
-    width: calc(100% - 64px);
-    margin-left: 64px;
+    width: calc(100% - 48px);
+    margin-left: 48px;
 }
 
 .reply_list.type_re .other_con.replied::before,
@@ -1485,8 +1485,8 @@ input {
     content: '';
     display: block;
     position: absolute;
-    left: -15px;
-    top: 16px;
+    left: -10px;
+    top: 12px;
     width: 10px;
     height: 10px;
     border-left: 1px dashed #AAA;
@@ -1496,8 +1496,8 @@ input {
 
 .reply_list.type_re .other_con .photo {
     position: relative;
-    top: unset;
-    left: unset;
+    top: -2px;
+    left: 0px;
     width: 20px;
     height: 20px;
     border-radius: 100%;
@@ -1523,11 +1523,16 @@ input {
 }
 
 .reply_list.type_re .other_reply {
+    position: relative;
+    top: 0px;
+    left: -20px;
     width: 100%;
+    
+    
 }
 
 .reply_list.type_re .other_reply .txt_box {
-    width: 100%;
+    width: calc(100% + 20px);
 }
 
 .reply_list.type_re .other_reply .txt {
@@ -1568,6 +1573,7 @@ input {
 }
 
 .reply_list.type_re .other_reply .txt a span.name {
+    
     float: left;
     display: flex;
     justify-content: flex-start;
@@ -1578,6 +1584,7 @@ input {
     line-height: 14px;
     color: #2E2E2E;
     margin-bottom: 0px;
+    margin-left: 20px;
     padding-top: 2px;
     
     
@@ -1619,6 +1626,9 @@ input {
     
 .reply_list.type_re .other_reply .txt .btn_rebox {
    
+    position: relative;
+    top: 0px;
+    left: 0px;
     padding-left: 0;
     margin-left: auto;
     display: flex;
@@ -1689,9 +1699,9 @@ input {
 
 .reply_list.type_re .other_reply .txt .re_txt .name_re {
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 200;
     line-height: 140%;
-    color: #A0A0A0;
+    color: #777;
     margin-right: 10px;
 }
 
@@ -1702,7 +1712,7 @@ input {
     gap: 4px;
 
     background: #FFF;
-    padding: 16px 4px 16px 4px;
+    padding: 14px 4px 14px 4px;
     margin-bottom: 0px;
     box-sizing: border-box;
     overflow: unset;
@@ -1711,13 +1721,13 @@ input {
 }
 
 .reply_list.type_re .my_con.replied {
-    width: calc(100% - 32px);
-    margin-left: 32px;
+    width: calc(100% - 24px);
+    margin-left: 24px;
 }
 
 .reply_list.type_re .my_con.replied_re {
-    width: calc(100% - 64px);
-    margin-left: 64px;
+    width: calc(100% - 48px);
+    margin-left: 48px;
 }
 
 .reply_list.type_re .my_con.replied::before,
@@ -1725,8 +1735,8 @@ input {
     content: '';
     display: block;
     position: absolute;
-    left: -15px;
-    top: 16px;
+    left: -10px;
+    top: 12px;
     width: 10px;
     height: 10px;
     border-left: 1px dashed #AAA;
@@ -1736,8 +1746,8 @@ input {
 
 .reply_list.type_re .my_con .photo {
     position: relative;
-    top: unset;
-    left: unset;
+    top: -2px;
+    left: 0px;
     width: 20px;
     height: 20px;
     border-radius: 100%;
@@ -1767,7 +1777,7 @@ input {
 }
 
 .reply_list.type_re .my_reply .txt_box {
-    width: 100%;
+    width: calc(100% + 20px);
 }
 
 .reply_list.type_re .my_reply .txt {
@@ -1867,6 +1877,9 @@ input {
     
     
 .reply_list.type_re .my_reply .txt .btn_rebox {
+    position: relative;
+    top: -2px;
+    left: -20px;
     float: unset;
     padding-left: 0;
     margin-left: auto;
@@ -1922,6 +1935,9 @@ input {
 }
 
 .reply_list.type_re .my_reply .txt .re_txt {
+    position: relative;
+    top: -2px;
+    left: -20px;
     clear: both;
     overflow: hidden;
     display: block;
@@ -1937,9 +1953,9 @@ input {
 
 .reply_list.type_re .my_reply .txt .re_txt .name_re {
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 200;
     line-height: 140%;
-    color: #A0A0A0;
+    color: #777;
     margin-right: 10px;
 }
 
